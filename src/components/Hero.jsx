@@ -1,4 +1,6 @@
 import resume from "../assets/Ashifa_resume.pdf";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function Hero() {
   return (
@@ -58,18 +60,36 @@ function Hero() {
         </div>
 
         {/* 🔗 Links */}
-        <div className="flex gap-6 text-gray-400 text-lg">
-          <a href="https://github.com/ashifa-1" target="_blank" className="hover:text-blue-400">
-            GitHub
-          </a>
-          <a href="https://linkedin.com" target="_blank" className="hover:text-blue-400">
-            LinkedIn
-          </a>
-          <a href="https://leetcode.com/ashifaaa" target="_blank" className="hover:text-blue-400">
-            LeetCode
-          </a>
-        </div>
+        <div className="flex gap-6 mt-6 text-2xl text-gray-400">
 
+          <a
+            href="https://github.com/ashifa-1"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white hover:scale-110 transition"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ashifa-mohammed/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-400 hover:scale-110 transition"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://leetcode.com/ashifaaa"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-yellow-400 hover:scale-110 transition"
+          >
+            <SiLeetcode />
+          </a>
+
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function Contact() {
   const form = useRef();
@@ -54,11 +56,35 @@ function Contact() {
             <p>Andhra Pradesh, India</p>
           </div>
 
-          <div className="flex gap-6 mt-6 text-blue-400">
-            <a href="https://github.com/ashifa-1" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:mdashifa12@gmail.com">Email</a>
-          </div>
+          <div className="flex gap-6 mt-6 text-2xl text-gray-400">
+
+          <a
+            href="https://github.com/ashifa-1"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-white hover:scale-110 transition"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ashifa-mohammed/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-blue-400 hover:scale-110 transition"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://leetcode.com/ashifaaa"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-yellow-400 hover:scale-110 transition"
+          >
+            <SiLeetcode />
+          </a>
+        </div>
         </div>
 
         {/* RIGHT SIDE FORM */}
