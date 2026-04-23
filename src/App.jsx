@@ -3,12 +3,17 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import CodingProfiles from "./components/CodingProfiles";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+import Background from "./components/Background";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-[#020617] via-[#020617] to-[#0f172a] text-white">
+    <div className=" text-white">
+
+      <Background />
       <Navbar />
       <Hero />
+      <Skills />
       <Projects />
       <CodingProfiles />
       <Contact />

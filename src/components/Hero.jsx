@@ -2,14 +2,9 @@ import resume from "../assets/Ashifa_resume.pdf";
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen bg-black text-white flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-screen text-white flex items-center relative overflow-hidden">
 
-      {/* 🌌 Subtle Blue Background (matches rest of site) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#020617] to-black"></div>
-
-      {/* ✨ Soft Glow (blue, not gold) */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/10 blur-3xl rounded-full"></div>
-
+      
       {/* 🌟 Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6">
 
